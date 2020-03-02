@@ -1,0 +1,99 @@
+@keyframes shakeInput {
+	25% {
+		transform: translateX(10px);
+	}
+
+	50% {
+		transform: translateX(0px);
+	}
+
+	75% {
+		transform: translate(10px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes shakeIcon {
+	25% {
+		transform: rotate(20deg);
+	}
+
+	50% {
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes showFromRight {
+	0% {
+		opacity: 0;
+		transform: translateX(15px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+
+@keyframes increaseElement {
+	0% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes showFromBottom {
+	0% {
+		display: block;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(-20px);
+	}
+}
+
+@keyframes showBottom {
+	0% {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes hiddeToBottom {
+	0% {
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(20px);
+		display: none;
+	}
+}
+
+@keyframes shiftLeft {
+	50% {
+		transform: translateX(10px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}

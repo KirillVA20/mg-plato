@@ -1,0 +1,47 @@
+.feedback {
+	&__title {
+		font-size: 35px;
+		padding-bottom: 1em;
+	}
+
+	&__description {
+		max-width: 500px;
+		padding-bottom: 1em;
+		font-size: 18px;
+	}
+
+	&__form {
+		input:not([type="submit"]),
+		textarea {
+			margin-bottom: 10px;
+			width: 50%; 
+		}
+		
+		input {
+			height: 40px;
+		}
+	}
+ }
+
+ @media (max-width: 1024px) {
+ 	.feedback {
+ 		&__form {
+ 			input:not([type="submit"]),
+ 			textarea {
+ 				width: 60%;
+ 			}
+ 		}
+ 	}
+ }
+
+@media (max-width: 570px) {
+ 	.feedback {
+ 		&__form {
+ 			input:not([type="submit"]),
+ 			textarea,
+ 			input[type="submit"] {
+ 				width: 100%;
+ 			}
+ 		}
+ 	}
+ }

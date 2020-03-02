@@ -1,0 +1,17 @@
+.basket-box {
+	padding: 0;
+	.mini-basket  {
+		background: none;
+		color: $elementColor;
+
+		i {
+			font-size: 26px;
+			color: $elementColor;
+			padding-right: 5px;
+		}
+
+		span {
+			color: $elementColor;
+		}
+	}	
+}

@@ -1,0 +1,115 @@
+/* c-sub
+------------------------------------------------------------------- */
+.c-sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-transition: box-shadow .3s, border-color .3s;
+    -webkit-transition: border-color .3s, -webkit-box-shadow .3s;
+    -o-transition: box-shadow .3s, border-color .3s;
+    transition: border-color .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border-color .3s;
+    transition: box-shadow .3s, border-color .3s, -webkit-box-shadow .3s;
+    border: 2px solid #dadada;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .c-sub {
+        padding: 6px;
+    }
+
+    .category-panel__item {
+        width: 25% !important;
+    }  
+}
+
+@media (max-width: 560px) {
+    .category-panel__item {
+        width: 50% !important;
+    }  
+}
+
+.c-sub__img {
+    position: relative;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .c-sub__img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .c-sub__img {
+        height: 60px;
+    }
+}
+
+.c-sub__img img {
+    
+}
+
+.c-sub__title {
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--text-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 16px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.category-panel__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.category-panel__item {
+    width: 15%;
+    padding-right:10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+
+@media (max-width: 1024px) {
+    .c-sub__title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .c-sub__title {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+}
+
+.c-sub:hover {
+    border-color: var(--main-color);
+}
+
+.c-sub:hover .c-sub__title {
+    color: var(--main-color);
+}

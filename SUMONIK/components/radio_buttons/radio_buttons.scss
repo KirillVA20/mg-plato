@@ -1,0 +1,60 @@
+label {
+
+	input:checked~span {
+		color: black;
+	}
+
+	input {
+		position: absolute;
+	    opacity: 0;
+	    cursor: pointer;
+	    height: 0;
+	    width: 0;
+		margin-right: 15px;
+
+	}
+
+	input:checked ~ .checkmark {
+		background-color: $elementColor !important;
+	}
+
+	input:checked ~ .checkmark:after {
+		visibility: visible;
+	}
+
+	input:hover ~ .checkmark {
+	  	background-color: #ccc;
+	}
+	
+	.name {
+		vertical-align: middle;
+		padding-left: 35px;
+		font-size: 16px;
+		cursor: pointer;
+		line-height: 1.8em;
+	}
+
+	.checkmark {
+		vertical-align: middle;
+		position: absolute;
+		height: 28px;
+		width: 28px;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 3px;
+		cursor: pointer;
+		box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+		transition: all .3s;
+
+		&:after {
+			visibility: hidden;
+			position: absolute;
+			content: "";
+			top: 9px;
+			left: 9px;
+			width: 10px;
+			height: 10px;
+			border-radius: 3px;
+			background: white;
+		}
+	}
+}

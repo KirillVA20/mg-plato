@@ -1,0 +1,110 @@
+@import "basket-box/basket-box.scss";
+@import "swipe-menu/swipe-menu.scss";
+@import "catalog/catalog.scss";
+
+.mobile-menu {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 50px;
+	z-index: 10000;
+	background: #f3f4f6;
+	border-bottom: 1px solid #dee1e6;
+	
+
+	&__settings--open {
+		.select__wrap {
+			display: inline-flex;
+		}
+	}
+
+	&__swipe-button {
+		display: block;
+		vertical-align: top;
+		height: 50px;
+		width: 64px;
+		text-align: center;
+		border-right: 1px solid #dee1e6;
+		color: $elementColor;
+		font-size: 	45px;
+		line-height: 45px;
+	    z-index: 100;
+			
+
+	    &:hover> i:before{
+			color: #000000;
+	    }
+
+	    i:before {
+	    	content: "menu";
+		   	transition: all .3s ease;
+		}
+	}
+		
+	&__swipe-menu {
+		position: fixed;
+		display: block;
+		top: 50px;
+		left: -237px;
+		bottom: 0;
+	}
+		
+	&__basket {
+	    position: fixed;
+	    top: 0;
+	    right: 65px;
+	}
+	
+	&__settings {
+		float: left;
+	}
+
+	&__button-wrap {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+
+	}
+
+	&__button {
+		padding-right: 5px;
+
+		&:hover {
+			i {
+				animation-name: shakeIcon;
+				animation-duration: .5s;
+			}
+		}
+
+		.c-compare__link,
+		.favourite,
+		.mini-basket {
+			background: none !important;
+			box-shadow: none !important;
+
+			&:hover {
+				width: 50px;
+			}
+
+			* {
+				color: $elementColor !important;
+			}
+
+			i {
+				font-size: 26px;
+			}
+		}
+
+		.mg-desktop-cart {
+			width: 50px !important;
+		}
+	}
+
+}
+
+@media (max-width: 768px) {
+	.mobile-menu {
+		display: block;
+	}
+}

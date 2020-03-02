@@ -1,0 +1,131 @@
+.settings-form {
+		display: flex;
+		width: inherit;
+		justify-content: space-between;
+		font-family: 'Ubuntu', sans-serif;
+		border:none;
+		z-index: 10001;
+
+		&__link {
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+	    	width: 50px;
+		    height: 50px;
+			margin-right: 10px;		
+			font-size:26px;
+		    text-align: center;
+		    color:$elementColor;
+		    z-index: 1;
+		    text-shadow: 1px 1px rgba(0, 0, 0, 0.12);
+
+		    &:before {
+		    	line-height: 50px;
+		    }
+		}
+
+		&__element {
+			position: relative;
+			display: inline-block;
+			float: left;
+			width: 100%;
+			padding: 0 0 0 15px;
+			height: inherit;
+			    background: #f3f4f6;
+
+
+			&--right {
+				border-right: 1px solid #dee1e6;
+			}
+		}
+
+		.select__wrap {
+			width: 100%;
+		}
+
+		&__wrap {
+			opacity: 0;
+			position: absolute;
+		    top: 110%;
+		    right: -2px;
+		    width: 300px;
+		    height: 0;
+		    box-shadow: 0 0 13px 2px rgba(0, 0, 0, 0.2);
+		    border-radius: 2px;
+		    transition: all .5s;
+
+		    &--open {
+		    	display: flex;
+		    	opacity: 1;
+				height: 50px;
+		    }
+		}
+
+	    &__button {
+			width: 100%;
+			font-size: $button-font-size;
+			line-height: 50px;
+			font-family: 'Ubuntu', sans-serif;
+			color: #8c95a4;
+			border:none;
+			cursor: pointer;
+			transition: all .3s ease;
+
+			&:hover {
+				color: $elementColor;
+			}
+
+			&:after {
+				content: "arrow_drop_down";
+				font-family: 'Material Icons';
+				position: absolute;
+			    right: 3px;
+			    top: 0;
+				font-size: $after-font-size;
+				line-height: 50px;
+			    font-weight: 400;
+			    color: #d1d5db;
+			}
+		}
+
+		&__list {
+		    min-width: 160px;
+		    padding: 5px 0;
+		    margin: 2px 0 0;
+		    background: #f3f4f6;
+			border-radius: 2px;
+		    font-size: $list-item-font-size;
+		    z-index: 1000;
+
+		    &--active {
+		    	visibility: visible;
+				opacity: 1;
+		    }
+		}
+
+		&__item {
+			padding: 5px 5px 5px 10px;
+			width: inherit;
+			color: #8c95a4;
+			font-family: "Ubuntu",sans-serif;
+			font-size: $dropdown-font-size;
+			line-height: 24px;
+			text-transform: capitalize;
+			transition: all .3s ease;
+			cursor: pointer;
+			    
+			a {
+			    width: 100%;
+			    color: #8c95a4;
+			    text-decoration: none;
+			    transition: all .3s ease;
+			}
+
+			&:hover {
+			    background: $elementColor;
+				a {
+					color: #FFF;
+				} 
+			}
+		}
+	}

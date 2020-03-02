@@ -1,0 +1,98 @@
+@import "banner/banner.scss";
+@import "slideshow-container/slideshow-container.scss";
+
+.page {
+	&__mobile-menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	&__catalog {
+		display: none;
+	}
+
+	&__slideshow {
+		width: 100%;
+	}
+
+	&__slideshow-box {
+		position: relative;
+	    height: 0;
+	    border: none;
+	    padding-top: 50%;
+	}
+
+	&__banner {
+		width: 100%;
+	}
+
+	&__banner-wrap {
+		position: relative;
+	    height: 0;
+	    border: none;
+	    padding-top: 50%;
+	}
+
+	&__banner-container {
+		position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	&__brand-wrap {
+		margin: 70px 0;	
+		padding-top: 20px;
+		padding-bottom: 30px;
+		background: #fff;
+	}
+
+	.product-container__list {
+		padding: 15px 15px;
+	}
+
+
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.page {
+		&__mobile-menu {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.page {
+		&__mobile-menu {
+			display: block;
+		}
+
+		&__catalog {
+			display: block;
+		}
+
+		&__banner-wrap {
+		    padding-top: 0;
+		    padding-bottom: 200%;
+		}
+	}
+}
+
+@media (max-width: 628px) {
+	.page {
+		&__slideshow {
+			height: 300px;
+		}
+
+		&__slideshow-box {
+			position: relative;
+		    height: 0;
+		    border: none;
+		    padding-top: 0%;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.category-list {
+	font-weight: 300;
+	
+	&__item {
+		font-size: $list-item-font-size;
+		color: #8c95a4;
+		cursor: pointer;
+		line-height: 24px;
+
+		&:not(first-of-type) {
+			margin-top: 8px;
+		}
+
+		&:hover {
+			color: $elementColor;
+		}
+		
+	}
+}

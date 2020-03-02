@@ -1,0 +1,38 @@
+.footer {
+	font-size: $list-item-font-size;
+	font-weight: 300;
+
+	&__item {
+		margin-top: 16px;
+	}
+
+	&__link {
+		color: #8c95a4;
+		line-height: 24px;
+		font-family: "Ubuntu",sans-serif;
+		font-weight: 300;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $elementColor;
+		}
+	}
+
+	&__copyright {
+		position: absolute;
+		left: 40px;
+		bottom: 88px;
+		font-size: $list-item-font-size;
+		color:#8c95a4;
+
+		a {
+			text-decoration: none;
+			color:#8c95a4;
+
+			&:hover {
+				color:$elementColor;
+			}
+		}
+	}
+}	
+

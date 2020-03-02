@@ -1,0 +1,122 @@
+.registration__wrap,
+.authorization__wrap, {
+	display: flex;
+	flex-direction: column;
+	max-width: 450px;
+	min-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	border: 1px solid #dee1e6;
+	padding: 40px 30px;
+	background: rgba(255,255,255, 0.5);
+	border-radius: 3px;
+	margin-top: 30px;
+}
+
+.registration__form-wrap,
+.authorization__form-wrap {
+	width: 100%;
+}
+
+.registration__title,
+.authorization__title {
+	width: 100%;
+	font-size: 24px;
+	padding-bottom: 15px;
+	text-align: left;
+
+	i {
+		font-size: 28px;
+		padding-right: 10px;
+		color: $elementColor;
+	}
+}
+
+.registration__message,
+.authorization__message {
+	width: 100%;
+	font-size: 16px;
+	padding-bottom: 5px;
+	text-align: left;
+	color: #8c95a4;
+}
+
+.authorization__form {
+	width: 100%;
+}
+
+
+
+.registration__input-wrap,
+.authorization__input-wrap {
+	padding-bottom: 15px;
+}
+
+.registration__input,
+.authorization__input {
+	display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    border-right: 3px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+
+.registration__submit-wrap {
+
+}
+
+.authorization__submit-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.registration__submit,
+.authorization__submit {
+	font-size: 14px;
+    color: #fff;
+    background: $elementColor;
+    text-shadow: none;
+    border-radius: 0;
+    border: none;
+    padding: 12px 16px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 2px;
+    text-shadow: 1px 1px rgba(0,0,0,.12);
+    cursor: pointer;
+    transition: all .3s;
+
+    .registration:hover {
+    	background: $elementHoverColor;
+    }
+}
+
+.authorization__forgot-password {
+	color: #8c95a4;
+	align-self: center;
+}
+
+.authorization__registration-wrap {
+	padding-top: 20px;
+	text-align: left;
+}
+
+.authorization__registration {
+	color: #8c95a4;
+	text-align: left;
+}
+
+@media (max-width: 480px) {
+	.registration__wrap,
+	.authorization__wrap {
+		min-width: 250px;
+	}
+}

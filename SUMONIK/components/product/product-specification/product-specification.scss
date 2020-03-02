@@ -1,0 +1,47 @@
+.product-specifications {
+	margin-bottom: 3em;
+
+	&__title {
+		color: $textColor;
+	}
+
+	&__table {
+		display: grid;
+		grid-template-rows: auto;
+		grid-auto-rows: auto;
+		border: 1px solid #dee1e6;
+		margin-bottom: 5px;
+		border-radius: 3px;
+	}
+
+	&__element {
+		display: flex;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.428571429;
+		color: #8c95a4;
+		
+
+		&--left {
+			vertical-align: middle;
+			padding: 8px;
+			width: 75%;
+			border-right: 1px solid #dee1e6;
+		}
+
+		&--right {
+			vertical-align: middle;
+			padding: 8px;
+			width: 25%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.product-specifications {
+		&__element--left,
+		&__element--right {
+			width: 50%;
+		}
+	}
+}

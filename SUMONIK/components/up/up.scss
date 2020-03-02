@@ -1,0 +1,50 @@
+.button-up {
+	position: fixed;
+	right: 15px;
+	bottom: 50px;
+	width: 50px;
+	height: 50px;
+	animation: hiddeToBottom;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards; 
+	z-index: 10000;
+
+	button {
+		height: inherit;
+		width: inherit;
+		cursor: pointer;
+		background: $elementColor;
+		border: none;
+		border-radius: 3px;
+		box-shadow: 1px 2px 3px rgba(0,0,0, 0.2);	
+		outline: none;
+	}
+
+	i {
+		font-size: 20px;
+		color: white;
+	}
+
+	&:hover {
+		i {
+			animation-name: shakeIcon;
+			animation-duration: .5s;
+			animation-iteration-count: 1;
+		}
+	}
+
+	&--active {
+		display: block;
+		animation-name: showFromBottom;
+		animation-duration: 0.3s;
+		animation-fill-mode: forwards; 
+	}
+}
+
+
+@media (max-width: 768px) {
+	.button-up {
+		right: 25px;
+		bottom: 25px;
+	}
+}

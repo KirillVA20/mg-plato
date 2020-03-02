@@ -1,0 +1,118 @@
+@import "catalog-description/catalog-description.scss";
+
+.catalog-page {
+	margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    &__wrap {
+        background: rgba(255,255,255, 0.4);
+        border-radius: 3px;
+        padding: 15px;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: rgba(255,255,255,1);
+        border-radius: 3px;
+    }
+
+    &__title {
+    	width: 100%;
+
+        h1 {
+            font-size: 35px;
+            font-weight: 400 ;
+            text-shadow: 1px 2px 3px rgba(0,0,0, 0.2);
+        }
+    }
+
+    &__description {
+         width: 100%;
+    }
+
+    &__filter {
+        width: 100%;
+    }
+
+    &__products {
+        width: inherit;
+
+        &--filter-close {
+            width: 100%;
+        }
+
+        &--filter-open {
+            width: 75%;
+        }
+        transition: all .3s;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+    }
+
+    &__second-description {
+        padding: 30px 0;
+    }   
+}
+
+@media (max-width: 768px) {
+
+    .catalog-description {
+        flex-direction: column;
+    
+        &__text {
+            width: 100%;
+
+        }
+
+        &__text-element {
+            font-size: 16px;
+        }
+
+        &__image {
+            max-width: 200px;
+            min-width: 200px;
+            height: auto;
+            justify-self: start;
+        }
+    }
+    
+    .catalog-page__clearfix-caption {
+        display: none;
+    }
+
+    .catalog-page__clearfix {
+        justify-content: center;
+    }
+
+    .filter {
+        &__panel {
+            justify-content: space-around;
+        }
+        
+        &__grid {
+            i {
+                font-size: 40px;
+            }   
+        }
+
+        &__sidebar {
+            font-size: 28px;  
+            button {  
+                i {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

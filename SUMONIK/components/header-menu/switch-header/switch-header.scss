@@ -1,0 +1,108 @@
+.side-header-buttons {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: auto;
+	transition: all .3s;
+	z-index: 10000;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
+	cursor: pointer;
+	
+	div {
+		transition: all .3s;
+	}
+
+	&--open {
+		left: 300px !important;
+		.switch-header--icon {
+			transform: rotate(180deg) ;
+		}
+	}
+
+	&__button:hover {
+		width: 70px;
+		border-bottom-right-radius: 3px;
+ 		border-top-right-radius: 3px;
+	}
+}
+
+
+.switch-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: $elementColor;
+	transition: 0.3s all ease;
+
+	&:hover {
+		background-color: $elementHoverColor;
+
+		.switch-header--icon {
+			animation-name: shakeIcon;
+			animation-duration: .5s;
+			animation-iteration-count: 1;
+		}
+	}
+
+	&--open:hover {
+		.switch-header--icon {
+			transform: rotate(0deg) !important;
+		}
+	}
+
+	&--icon {
+		font-size: 18px;
+		transform: rotate(0deg);
+		transition: all .3s ease;
+	}
+}
+
+.mini-basket {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	width: 50px;
+	height: 50px;
+	background: $textColor;
+
+	i {
+		color: white;
+	}
+
+	&:hover {
+		i {
+			animation-name: shakeIcon;
+			animation-duration: .5s;
+			animation-iteration-count: 1;
+		}
+	}
+
+	span {
+		color: white;
+	}
+}
+
+.compare {
+	width: 50px;
+	height: 50px;
+	background: $textColor;
+	
+	&:hover i {
+		animation-name: shakeIcon;
+		animation-duration: .5s;
+	}
+
+	i {
+		color: white;
+	}
+}
+
+@media (max-width: 768px) {
+	.side-header-buttons {
+		display: none;
+	}
+}

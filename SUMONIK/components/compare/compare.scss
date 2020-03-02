@@ -1,0 +1,178 @@
+.c-goods__item {
+	display: flex;
+	position: relative;
+	margin-right: 10px;
+	flex-direction: column;
+	max-height: 300px;
+	min-height: 300px;
+	min-width: 225px;
+    max-width: 225px;
+}
+
+.addToCompare {
+	font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+
+    i {
+    	padding-right: 5px;
+    }
+}
+
+.addToCompare__caption {
+	display: none;
+}
+
+.main-block .addToCompare__caption {
+	display: block;
+}
+
+.addToCompare:hover {
+	i {
+		animation-name: shakeIcon;
+		animation-duration: .5s;
+	}
+}
+
+
+.second-scroll::-webkit-scrollbar{
+	width: 14px;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.second-scroll::-webkit-scrollbar-thumb:hover {
+	background: $elementHoverColor;
+}
+
+.second-scroll::-webkit-scrollbar-thumb {
+	padding-left: 3px;
+	padding-right: 3px;
+	background: $elementColor;
+	border-radius: 10px;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.c-goods__left {
+	height: 210px;
+}
+
+.c-goods__right {
+	height: 90px;
+	justify-content: center;
+}
+
+.c-compare__remove {
+	position: absolute;
+	left: auto;
+	right: 10px;
+	top: 10px;
+	font-size: 18px;
+	color: #000000;
+	z-index: 100;
+}
+
+.c-goods__img {
+	vertical-align: middle;
+}
+
+.c-goods__price {
+	padding-bottom: 5px;
+}
+
+.c-goods__current {
+	color: $elementColor;
+}
+
+.c-goods__title {
+	display: block;
+	font-size: 18px;	
+	color: black;
+	font-weight: 500;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.c-goods__price--old {
+	padding-left: 5px;
+}
+
+.c-button {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.empty-wrap {
+	text-align: center;
+
+	&>* {
+		padding-top: 20px;
+	}
+}
+
+.empty-compare {
+	font-size: 24px;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.c-compare__top {
+		margin-top: 50px;
+	}
+
+	.c-compare {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 540px) {
+	.c-compare__top {
+		.mg-clear-compared-products option {
+			font-size: 12px;
+		}
+
+		.c-button {
+			font-size: 12px;
+			padding: 15px 13px;
+		}
+
+		.c-form  {
+			font-size: 12px;
+			padding: 15px 13px;
+		}
+	}
+}
+
+@media (max-width: 470px) {
+	.c-compare__top {
+		.c-form,
+		.c-button {
+			display: flex;
+			align-items: center;
+			padding: 8px 13px;
+		}
+
+	}
+}
+
+@media (max-width: 400px) {
+	.c-compare__top {
+		.c-form,
+		.c-button {
+			padding: 14px 15px;
+			font-size: 0;
+
+			i {
+				font-size: 20px;
+			}
+		}
+
+	}
+}
+

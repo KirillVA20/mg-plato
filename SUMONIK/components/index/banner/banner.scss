@@ -1,0 +1,162 @@
+.banner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	height: auto; 
+		
+	&__box {
+		position: relative;
+		height: 100%;
+	}
+			
+	&__description-title {
+		font-weight: 400;
+	}
+
+	&__box--left {
+		color: #ffffff;
+				
+		.banner__description-sector {
+			top: 50%;
+    		left: 9.3%;
+    		transform: translateY(-50%);
+		}
+
+		a {
+			background: #f4304c;
+		}
+	}
+
+	&__box--right {
+		color: $textColor;
+
+		.banner__description-sector {
+			top: 0;
+  			padding-top: 8.8%;
+			padding-left: 9.4%;
+		}
+
+		a {
+			background: #1fc5ef;		
+		}
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		background-size: 100%;
+		transition: all .6s;
+		cursor: pointer;	
+
+		&:hover {
+			background-size: 120%;
+		}
+	}
+
+	&__description-box {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 30.8%;
+		background: #17dda3;
+		padding-left: 9.3%;
+	}
+
+	&__description-sector {
+		position: absolute;
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	&__description-title {
+		font-size: 52px;
+		line-height: 52px;
+		margin:0;				
+    	font-family: "Ubuntu",sans-serif;
+	}
+
+	&__description-subtitle {
+		margin: 15px 0;
+		font-size: 21px;
+		line-height: 30px;
+    	font-weight: 300;
+    	font-family: "Ubuntu",sans-serif;
+	}
+
+	&__description-link {
+		position: absolute;
+	  	right: 80px;
+    	bottom: 90px;
+    	padding: 25px 30px;
+    	font-size: 25px;
+	    line-height: 25px;
+	    font-weight: 700;
+		text-transform: uppercase;
+	    color: #fff !important;
+	    border-radius: 2px;
+	    text-shadow: 1px 1px rgba(0,0,0,.12);
+    	cursor: pointer;
+    	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    	transition: all .3s ease;
+
+    	&:hover {
+    		background-color: $elementHoverColor;
+    	}
+	}
+}
+
+@media (max-width: 1750px) {
+		.banner {
+
+			.banner__description-subtitle {
+				font-size: 21px;
+				line-height: 30px;
+			} 
+		}
+}
+
+@media (max-width: 1199px) {
+	.banner {
+		.banner__description-link {
+			right: 5% ;
+			bottom: 40px ;
+		}
+	}
+}
+
+@media (max-width: 1060px) and (min-width: 768px) {
+	.banner__box--left {
+		.banner__description-link{
+			bottom: 118%;
+		}
+		
+		.banner__description-sector {
+			right: 0;
+			left: 0;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.banner {
+		grid-template-columns: 1fr; 
+	}
+}
+
+@media (max-width: 540px) {
+	.banner__box--left {
+		a.banner__description-link{
+			bottom: 118%;
+		}
+	}	
+}
+
+@media (max-width: 480px) {
+	.banner__description-title {
+		font-size: 45px;
+	}
+	.banner__description-subtitle {
+		margin: 0;
+	}
+}

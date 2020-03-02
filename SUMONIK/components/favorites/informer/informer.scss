@@ -1,0 +1,10 @@
+.favourite:hover i {
+    animation-name: shakeIcon;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+
+.favourite:hover {
+	width: 70px;
+}
+

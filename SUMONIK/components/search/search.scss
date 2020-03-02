@@ -1,0 +1,115 @@
+.search {
+	width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+
+	&__field {
+		padding: 14px 50px 14px 20px;
+		box-sizing:border-box;
+		margin:0;
+		width: 240px;
+		font-size: 16px;
+		line-height: 1.4em;
+		color: $elementColor;
+		background: #f3f4f6;
+		border: 1px solid #d9d9d9;
+	}
+
+	&__button {
+		position: absolute;
+		top: 11px;
+		right: 18px;
+		margin:0;
+		width: 27px;
+		height: 27px;
+		font-size: 27px;
+		line-height: 27px;
+		background: transparent;
+		border: transparent;
+		transition: all .3s ease;
+		
+		&:hover {
+			color: #000000;
+		}
+
+	}
+	
+	&__results {
+		
+	}
+}
+
+.search-results {
+	position: relative;
+	width: 240px;
+	z-index: 100;
+
+	&__list {
+		position: absolute;
+		margin: 0;
+		max-height: 500px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		border-radius: 3px;
+		border: 1px solid #d9d9d9;
+		box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+	}
+
+	&__item {
+		width: 240px;
+		background-color: #f3f4f6;
+	}
+
+	&__link {
+		width: inherit;
+		padding: 10px;
+		display: flex;
+		outline: none;
+	}
+
+	&__link:focus .search-results__info {
+		color: #ffffff;
+	}
+	
+	.search-results__item > .search-results__link:focus {
+		background: $elementColor;
+	}
+
+	&__link:hover .search-results__info {
+		color: #ffffff;
+	}
+	
+	.search-results__item > .search-results__link:hover {
+		background: $elementColor;
+	}
+
+	&__item {
+		border: 1px solid #d9d9d9;
+	}
+
+	&__info {
+		color: black;
+		font-size: 14px;
+		transition: all .3s;
+    	overflow: hidden;
+	}
+
+	&__title {
+		padding-bottom: 5px;
+		font-size: 18px;
+		white-space: nowrap;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+	}
+
+	&__price {
+		padding-bottom: 5px;
+		font-size: 16px;
+	}
+
+	&__img {
+		height: 50px;
+		width: 50px	;
+		margin-right: 10px;
+	}
+}

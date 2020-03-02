@@ -1,0 +1,55 @@
+.c-form {
+	&__row {
+		padding-bottom: 10px;
+		font-size: 18px;
+
+		input {
+                  height: 40px;
+                  font-size: 18px;
+                  width: 50%;
+		}
+
+		b {
+			font-weight: 500;
+		}
+
+		textarea {
+                  height: 50px;
+		}
+
+		select {
+			height: 40px;
+		}
+
+		select,
+		textarea,
+		input {
+                  width: 50%;
+                  font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+      .c-form {
+            &__row {
+                  select,
+                  textarea,
+                  input {
+                        width: 60%;
+                  }
+            }
+      }
+}
+
+@media (max-width: 570px) {
+      .c-form {
+            &__row {
+                  select,
+                  textarea,
+                  input {
+                        width: 100%;
+                  }
+            }
+      }
+}

@@ -1,0 +1,195 @@
+.main-block {
+	&__name {
+		margin: 0;
+		font-weight: 400;	
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	&__rating {
+		display: flex;
+
+		a,span {
+			color: #8c95a4;
+			font-size: 14px;
+		}
+	}
+
+	&__review-number {
+		padding-left: 10px;
+		padding-right: 5px;
+	}
+
+	&__create-review {
+		padding-left: 5px;
+	}	
+
+	&__price {
+		margin: 0 0 5px;
+	    padding: 10px 0;
+	    border-bottom: 1px solid #dee1e6;
+
+	}
+
+	&__new-price {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 30px;
+	    color: $elementColor;
+	    line-height: 30px;
+	    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+	}
+
+	&__old-price {
+		vertical-align: middle;
+		display: inline-block;	
+		font-size: 20px;
+    	line-height: 30px;
+    	color: #8c95a4;
+    	font-weight: 300;
+    	text-decoration: line-through;
+    	vertical-align: bottom;
+    	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	&__product-avail {
+		margin: 0;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #dee1e6;
+
+		li {
+			line-height: 24px;
+			font-size: 14px;
+			color: #8c95a4;
+			text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	&__form {
+
+		h3 {
+			font-size: 21px;
+			color: $elementColor;
+			margin: 10px 0 10px;
+			font-weight: 300;
+			text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+		}		
+	}
+
+	&__buy-button {
+		width: 100%;
+		padding: 17px 0;
+		font-size: 16px;
+    	line-height: 16px;
+    	text-transform: uppercase;
+    	font-weight: 500;
+		background: $elementColor;
+		border-radius: 2px;
+		border-style: none;
+		color: #fff;
+		transition: all .3s;
+		cursor: pointer;
+		margin-bottom: 15px;
+		
+		&:hover {
+			background: $elementHoverColor;	
+		}
+
+	}
+
+	&__button-wrap {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		margin-top: 15px;
+
+		&__button-element {
+			width: 100%;
+			border: 1px solid #dee1e6;
+		    padding: 10px 0;
+		    border-radius: 2px;
+		    background: none;
+		    color: $elementColor;
+		    cursor: pointer;
+		    transition: all .3s ease;
+
+		    i {
+		    	color: $elementColor;
+		    	font-size: 25px;
+	    		line-height: 25px;
+		    }
+
+		    &:hover {
+		    	background: $elementColor;
+		    	color: #ffffff;
+		    }
+		}
+	}
+
+	li {
+		width: 100%;
+	}
+
+	&__button-element {
+		display: block;
+		width: 100%;
+		border: 1px solid #dee1e6;
+	    padding: 10px 0;
+	    border-radius: 2px;
+	    background: none;
+	    text-align: center;
+	    color: $elementColor;
+	    cursor: pointer;
+	    transition: all .3s ease;
+
+	    i {
+	    	font-size: 25px;
+    		line-height: 25px;
+	    }
+
+	    &:hover {
+	    	background: $elementColor;
+	    	color: #ffffff;
+	    }
+	}
+
+	.select-type {
+		display: flex;
+		
+		select {
+			margin-left: 5px;
+		}
+	}
+
+	.mg__prop_p_check .label-black,
+	.mg__prop_p_radio .label-black{
+		padding-left: 35px;
+	}
+
+	.mg__prop_p_check label,
+	.mg__prop_p_radio label {
+		padding-top: 10px;
+		display: flex;
+	}
+
+	.property-title {
+		font-size: 16px;
+	}
+
+	.count-on-storage {
+		padding-left: 10px;
+		font-size: 16px;
+	}
+
+	.storages-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.whole-info {
+		padding-top: 15px;
+	}
+
+	.name-group {
+		font-size: 16px;
+	}
+}

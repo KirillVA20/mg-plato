@@ -1,0 +1,93 @@
+.property-form  {
+	display: flex;
+	flex-direction: column;
+}
+
+.buy-container {
+	width: 100%;
+	margin-bottom: 15px;
+
+}
+
+.c-buy {
+	width: 100%;
+
+}
+
+.c-buy__buttons {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.product-info {
+
+}
+
+.c-buy--product-element {
+	display: flex;
+	justify-content: center;
+}
+
+.c-buy {
+	&--product-element {
+		.c-button {
+		
+			span,i {
+				margin-right: 5px;
+			}
+
+			&__icon {
+				font-size: 28px;
+				line-height: 28px;	
+			}
+
+			&__icon:after{
+				content: "local_grocery_store";
+			}
+
+			&__text {
+				line-height: 16px; 
+				font-size: 16px;
+				margin-left: 6px;
+				text-transform: uppercase;
+				font-weight: 500;
+			}
+		}
+	}
+
+	&--catalog {
+		.c-button {
+			vertical-align: middle;
+			width: 100%;
+			padding: 5px 0;
+			border-radius: 2px;
+			border-style: none;
+			background: $elementColor;
+			cursor: pointer;
+			font-size: 18px;
+			line-height: 36px;
+			color: #ffffff;
+			transition: all .3s;
+
+			&:hover {
+				background: $elementHoverColor;
+			}
+
+			a {
+				font-size: 18px;
+				line-height: 36px;
+				color: #ffffff;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	.c-buy {
+		.product-buy {
+			font-size: 16px;
+		}
+	}
+}

@@ -1,0 +1,344 @@
+
+/* c-variant
+------------------------------------------------------------------- */
+.c-variant__scroll {
+    height: auto;
+}
+
+.c-goods__item.product-wrapper .c-variant__scroll {
+    max-height: 95px;
+    text-align: center;
+}
+
+.c-goods__item.product-wrapper .c-variant__scroll span {
+    text-align: left;
+}
+
+.c-variant__scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.c-variant__scroll::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+} 
+
+@media (max-width: 1024px) {
+    .c-variant__scroll::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    .c-variant__scroll::-webkit-scrollbar:vertical {
+        width: 4px;
+    }
+
+    .c-variant__scroll::-webkit-scrollbar:horizontal {
+        height: 4px;
+    }
+
+    .c-variant__scroll::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    .c-variant__scroll::-webkit-scrollbar-track {
+        background-color: #fff;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+.c-variant__scroll label {
+    margin-top: 0 !important;
+    width: 100%;
+}
+
+.c-variant__scroll label:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .c-variant__scroll label:before {
+        display: none;
+    }
+}
+
+.c-variant__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 40px;
+    width: 30%;
+    padding: 2px;
+    -webkit-transition: all .3s;
+    -webkit-transition: -webkit-all .3s;
+    -o-transition: all .3s;
+    transition: -webkit-all.3s;
+    transition: all .3s;
+    transition: all .3s, -webkit-all .3s;
+    border: 2px solid #dadada;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+@media (max-width: 767px) {
+    .c-variant__row {
+        min-height: 32px;
+    }
+}
+
+.variants-tbody {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.variants-table {
+    width: 100%;
+}
+
+
+.c-variant__row:hover {
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .1);
+    border: 2px solid var(--main-color);
+}
+
+.c-variant__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.c-variant__title {
+    display: none;
+}
+
+.c-form {
+    cursor: pointer;
+    padding: 0 10px 10px 0;
+}
+
+.c-variant__img {
+    position: relative;
+    margin-right: 6px;
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+.c-variant__img img {
+    margin: auto;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 5px;
+}
+
+.c-variant__value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.c-variant__name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .c-variant__name {
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 1024px) {
+    .c-variant__name {
+        font-size: 16px;
+    }
+
+    .c-variant__price--old {
+        font-size: 14px;
+    }
+
+    .c-variant__price--current {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+    .c-variant__row {
+        width: 48%;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .c-variant__row {
+        width: 100%;
+    }
+
+    .c-variant__img img {
+        height: 100px;
+    }
+}
+
+.c-variant__price {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .c-variant__price {
+        font-size: 12px;
+    }
+
+    .c-form.active {
+        padding: 0;
+    }
+}
+
+.c-variant__price * {
+    padding-top: 5px;
+}
+
+
+@media (max-width: 767px) {
+    .c-variant__price {
+        font-size: 10px;
+    }
+
+    .c-variant__column .c-form {
+        display: flex;
+    }
+
+    .c-variant__value {
+        width: 60%;
+    }
+
+    .c-variant__img {
+        width: 40%;
+    }
+}
+
+.c-variant__price--old {
+    margin-right: 6px;
+    color: #999;
+}
+
+@media (max-width: 767px) {
+    .c-variant__price--old {
+        margin-right: 0;
+    }
+}
+
+.c-variant__price--current {
+    color: var(--main-color);
+}
+
+.c-variant__price--not-available {
+    display: none;
+    color: #999;
+}
+
+.c-variant__price--none .c-variant__price--old,
+.c-variant__price--none .c-variant__price--current {
+    display: none;
+}
+
+.c-variant__price--none .c-variant__price--not-available {
+    display: block;
+}
+
+.c-product .c-variant {
+    margin-top: 16px;
+}
+
+.c-product .c-variant__title {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+    .c-product .c-variant__title {
+        font-size: 16px;
+    }
+}
+
+.c-product .c-variant__scroll {
+    max-height: 160px;
+}
+
+@media (max-width: 767px) {
+    .c-product .c-variant__img {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .c-product .c-variant__name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .c-product .c-variant__price {
+        font-size: 12px;
+    }
+}
+
+.c-goods__item .c-variant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .c-goods__item .c-variant {
+        margin-bottom: 10px;
+    }
+}
+
+.color-block span,
+.color-block div {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.color-block span {
+    font-weight: 300;
+}

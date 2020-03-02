@@ -1,0 +1,65 @@
+.c-compare__link {
+    width: 50px;
+    height: 50px;
+    flex-wrap: nowrap;  
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+.c-compare__link:hover {
+    width: 70px;
+}
+
+.c-compare__link--icon {
+    width: auto;
+    font-size: 18px;
+    color: #5b3f97;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .c-compare__link--icon {
+     
+    }
+}
+
+.c-compare__link--number {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.c-compare__link--number:empty {
+    padding-left: 0;
+}
+
+.c-compare__link--count {
+    color: white;
+    padding-left: 5px;
+
+}
+
+.c-compare__link--count:empty {
+    padding-left: 0;
+}
+
+.c-compare__link--text {
+    font-size: 12px;
+    margin-top: 4px;
+    color: #666;
+}
+
+.c-compare__link:hover .c-compare__link--text {
+    text-decoration: underline;
+}

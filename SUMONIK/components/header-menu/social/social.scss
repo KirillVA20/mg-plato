@@ -1,0 +1,32 @@
+.social {
+	height: 39px;
+
+	&__item {
+		display: inline-block;
+		margin-left: 8px;
+
+		&:hover>a {
+			border-color: $elementColor;
+		    background: $elementColor;
+		    color: #fff;
+
+		}
+	}
+
+	&__link {
+		display: inline-block;
+	    width: 39px;
+	    height: 39px;
+	    border-radius: 50%;
+	    background: 0 0;
+	    text-align: center;
+	    border: 2px solid #dee1e6;
+	    color: #dee1e6;
+
+	    i {
+	    	font-size: $link-font-size;
+			line-height: 39px;
+			transition: all 0.3s ease;
+	    }
+	}
+}

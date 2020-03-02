@@ -1,0 +1,43 @@
+.cart_form {
+	display: flex;
+	padding-top: 10px;
+	margin-bottom: 15px;
+}
+
+.cart_form span {
+	font-weight: 300;
+	color: #8c95a4;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.amount_change {
+	display: flex;
+	padding-left: 5px;
+}
+
+.amount_change button {
+	background: #8c95a4;
+	background: none;
+	outline: none;
+	border: none;
+	box-shadow: none;
+	height: 30px;
+	cursor: pointer;
+}
+
+.amount_change button svg {
+	width: 30px;
+	height: 30px;
+}
+
+.amount_change button svg path {
+	background: #8c95a4;
+}
+
+.amount_input {
+	text-align: center;
+	width: 40px;
+	border: 1px solid #dee1e6 ;
+	border-radius: 3px;
+}

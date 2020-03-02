@@ -1,0 +1,92 @@
+.c-compare__informer {
+    position: fixed;
+    z-index: 999;
+    top: 16px;
+    right: 0;
+    left: 0;
+    display: none;
+    width: 300px;
+    margin: auto;
+    background: var(--main-color);
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px rgba(0,0,0, .2);
+}
+
+.c-compare__informer .icon {
+    margin-right: 10px;
+}
+
+.c-compare__informer--content {
+    font-size: 18px;
+    color:#fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px;
+    color: #fff;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.c-compare__informer--open {
+    animation-name:  shakeElement;
+    animation-duration: 1s;
+}
+
+
+@keyframes shakeElement {
+    0% {
+        transform: translateY(40px);
+    }
+
+    10% {
+        transform: translateY(20px);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
+
+    30% {
+        transform: translateY(8px);
+    }
+
+    40% {
+        transform: translateY(-8px);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+
+    60% {
+        transform: translateY(-6px);
+    }
+
+    70% {
+        transform: translateY(4px);
+    }
+
+    80% {
+        transform: translateY(-4px);
+    }
+
+    90% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .c-compare__informer {
+        top: 60px;
+    }
+}

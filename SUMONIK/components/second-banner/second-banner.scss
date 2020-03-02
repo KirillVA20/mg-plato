@@ -1,0 +1,17 @@
+.second-banner {
+	margin-top: 70px;	
+	width: 100%;
+	height: auto;
+
+	&__wrap {
+		width: inherit;
+		height: auto;
+	}
+
+	&__image {
+		width: inherit;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

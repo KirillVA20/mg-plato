@@ -1,0 +1,48 @@
+.user {
+	box-sizing:border-box;
+
+	&__category-list {
+		box-sizing:border-box;
+		margin-top: $link-font-size;
+		padding-left: 0;
+		list-style: none;
+		font-family: 'Ubuntu', sans-serif;
+	}
+	
+	&__category {
+		margin-top: 16px;
+		height: 24px;
+		font-size: $list-item-font-size;
+		line-height: 24px;
+
+		&:hover span,
+		&:hover i {
+			color: $elementColor;
+		}
+	}
+
+	&__link i,
+	&__link span {
+		vertical-align: middle;
+	}
+
+	&__link {
+		font-size: $link-font-size;
+		line-height: 24px;
+		color: #8c95a4;
+		font-weight: 300;
+		text-transform: uppercase;
+		
+		span {
+			transition: all .6s ease;
+		}
+
+		i {
+			color: #d1d5db;
+			margin-left: 10px;
+			font-size: 25px;
+			margin-right: $link-font-size;
+			transition: all .3s ease;
+		}
+	}
+}
